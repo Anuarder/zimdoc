@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+verdaccio_url=http://localhost:4873
+grep -q $verdaccio_url package-lock.json \
+  && echo "\n[ERROR] Found references to "$verdaccio_url" in package-lock.json. Forgot to revert verdaccio registry usage?\n" \
+  && exit 1
+
+npx lerna run test:unit
