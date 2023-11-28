@@ -12,10 +12,33 @@ module.exports = {
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh'],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.ts'],
+      },
+      alias: {
+        map: [
+          ['~', './src'],
+          ['~shared', './src/shared'],
+          ['~img', './src/shared/images'],
+        ],
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.css'],
+      },
+    },
+  },
   rules: {
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
+    ],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        ts: 'never',
+      },
     ],
   },
 };
