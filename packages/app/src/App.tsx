@@ -1,7 +1,12 @@
+import { Routes, Route } from 'react-router-dom';
+import { AuthPage } from './pages/auth-page';
+
 function App() {
   return (
     <>
-      <h1 className="mt-2 text-red-500">Hello world</h1>
+      <Routes>
+        <Route path="/auth" element={<AuthPage />} />
+      </Routes>
     </>
   );
 }
