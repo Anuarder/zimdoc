@@ -9,6 +9,7 @@ import {
 
 import { serveStatic } from './plugins/serve-static';
 import { config } from './config';
+import { createSocketInstance } from './socket';
 import { ping } from './routes/ping';
 import { userRoutes } from './routes/user';
 import { documentRoutes } from './routes/document';
@@ -28,6 +29,8 @@ async function setupServer() {
 
   app.setValidatorCompiler(validatorCompiler);
   app.setSerializerCompiler(serializerCompiler);
+
+  createSocketInstance(app);
 
   app.register(ping, { prefix: SERVER_API_PREFIX });
   app.register(userRoutes, { prefix: SERVER_API_PREFIX });
