@@ -1,0 +1,12 @@
+{
+  "name": "@zimdoc/eslint-config",
+  "version": "0.0.1",
+  "description": "ESLint Config",
+  "main": "index.js",
+  "author": "Anuar Ibrayev",
+  "license": "ISC",
+  "peerDependencies": {
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.29.0"
+  }
+}
