@@ -7,6 +7,7 @@ module.exports = {
     '@zimdoc/eslint-config',
     '@zimdoc/eslint-config-ts',
     'plugin:react-hooks/recommended',
+    'prettier',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
@@ -17,4 +18,4 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
-}
+};
