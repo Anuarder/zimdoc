@@ -8,6 +8,7 @@
     "build": "tsc && vite build",
     "format": "prettier --write '**/*.{cjs,mjs,cts,mts,js,jsx,ts,tsx,json,css,md,yml}'",
     "lint": "eslint . --ext ts,tsx --ignore-path .gitignore",
+    "test:unit": "vitest run --passWithNoTests",
     "preview": "vite preview"
   },
   "dependencies": {
