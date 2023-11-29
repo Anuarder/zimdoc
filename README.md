@@ -28,6 +28,11 @@
 
 <img src="./docs/document-page.png" width="400">
 
+**Демонстрация**
+
+https://github.com/Anuarder/zimdoc/assets/32986136/a9c977af-cb4e-477f-8746-180f9c256578
+
+
 ### Как запустить?
 
 ```
