@@ -1,12 +1,14 @@
 import type { JSX } from 'react';
 import BackgroundImage from '~img/background.png';
 import ZimranIcon from '~img/zimran-icon.svg';
+import { useNavigate } from 'react-router-dom';
 
 export function UiBaseLayout({
   children,
 }: {
   children?: string | JSX.Element | JSX.Element[];
 }) {
+  const navigate = useNavigate();
   return (
     <main
       className="h-screen bg-slate-50 bg-contain bg-center bg-no-repeat p-10"
@@ -22,6 +24,7 @@ export function UiBaseLayout({
           src={ZimranIcon}
           role="presentation"
           alt=""
+          onClick={() => navigate('/auth')}
         />
         {children}
       </section>

@@ -3,10 +3,10 @@ import type { UserType } from './types';
 
 export const User = {
   setData(user: UserType) {
-    localStorage.setItem('user:data', JSON.stringify(user));
+    sessionStorage.setItem('user:data', JSON.stringify(user));
   },
   getData() {
-    return destr<UserType | null>(localStorage.getItem('user:data'));
+    return destr<UserType | null>(sessionStorage.getItem('user:data'));
   },
   isAuthenticated() {
     const data = this.getData();

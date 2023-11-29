@@ -11,7 +11,7 @@ export const DocumentApi = {
       userId,
     });
   },
-  getDocumentByDocumentId(id: string) {
+  getDocumentByDocumentId(id: string): AxiosPromise<DocumentType> {
     return http.get(`/get-document/${id}`);
   },
 };

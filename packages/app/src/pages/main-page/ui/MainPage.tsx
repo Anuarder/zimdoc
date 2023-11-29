@@ -37,7 +37,7 @@ export function MainPage() {
   return (
     <UiBaseLayout>
       <section className="flex h-full w-full flex-col overflow-auto bg-white">
-        <div className="mx-auto w-full max-w-6xl">
+        <div className="mx-auto w-full max-w-6xl px-6">
           <div className="relative">
             <button
               type="button"

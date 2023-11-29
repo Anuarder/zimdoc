@@ -6,7 +6,8 @@
   ],
   "scripts": {
     "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "dev": "lerna run dev --parallel"
   },
   "devDependencies": {
     "@commitlint/cli": "18.4.3",
