@@ -37,6 +37,7 @@ https://github.com/Anuarder/zimdoc/assets/32986136/d29f3320-4fc7-4eb0-ba9a-8a28a
 ### Как запустить?
 
 ```
+npm install
 npm run dev
 ```
 
