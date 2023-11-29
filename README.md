@@ -30,7 +30,8 @@
 
 **Демонстрация**
 
-https://github.com/Anuarder/zimdoc/assets/32986136/a9c977af-cb4e-477f-8746-180f9c256578
+https://github.com/Anuarder/zimdoc/assets/32986136/d29f3320-4fc7-4eb0-ba9a-8a28a6b2c934
+
 
 
 ### Как запустить?
